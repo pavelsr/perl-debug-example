@@ -1,17 +1,26 @@
-Usage example of different profilers
+Sandbox and usage examples of different Perl profilers
+
+Already tested:
+
+https://metacpan.org/pod/Devel::NYTProf
+
+https://metacpan.org/pod/Devel::FastProf
 
 
-You can test
+For running example execute
 
 ```
-perl -d:FastProf start.pl
-
+    make <profiler_alias`
 ```
 
+E.g.
+
 ```
-sudo cpanm Devel::NYTProf Devel::FastProf Devel::SmallProf Devel::Profile Devel::AutoProfiler Devel::Modlist Devel::DProfLB
+    make nytprof
 ```
 
+Current used and tested profilers
+
+See more at https://github.com/pavelsr/coding_standarts/wiki/Perl-profilers
 
 
-https://metacpan.org/pod/B::Xref
