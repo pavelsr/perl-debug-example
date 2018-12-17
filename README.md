@@ -10,7 +10,7 @@ https://metacpan.org/pod/Devel::FastProf
 For running example execute
 
 ```
-    make <profiler_alias`
+    make <profiler_alias>`
 ```
 
 E.g.
@@ -18,8 +18,6 @@ E.g.
 ```
     make nytprof
 ```
-
-Current used and tested profilers
 
 See more at https://github.com/pavelsr/coding_standarts/wiki/Perl-profilers
 
