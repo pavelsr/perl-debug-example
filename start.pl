@@ -16,7 +16,6 @@ use X qw(x_sub1 x_sub2);
 
 # A.pm
 sub1();
-sub2();
 
 # X.pm
 x_sub1();
@@ -26,3 +25,4 @@ x_sub2();
 # my $b = B->new;
 # $b->method1();
 
+ривязанное

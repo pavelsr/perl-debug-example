@@ -21,4 +21,4 @@ E.g.
 
 See more at https://github.com/pavelsr/coding_standarts/wiki/Perl-profilers
 
-
+Good working tracers: calltrace and dumptrace
