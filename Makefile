@@ -28,7 +28,14 @@ tracecalls:
 	perl -d:TraceCalls=sub1 start.pl
 
 calltrace:
+	# most ok debugger
 	perl -d:CallTrace start.pl
 	
 dumptrace:
 	perl -d:DumpTrace start.pl
+	
+xray:
+	perl -MDevel::XRay start.pl
+	
+debughooks:
+	perl -d:DebugHooks::Terminal start.pl

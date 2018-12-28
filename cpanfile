@@ -1,2 +1,11 @@
+requires 'Devel::NYTProf';
 requires 'Devel::KYTProf';
+requires 'Devel::FastProf';
+requires 'Debug::LTrace';
+requires 'Devel::TraceCalls';
+requires 'Devel::CallTrace';
+requires 'Devel::CallTrace';
+requires 'Devel::DumpTrace';
+requires 'Devel::XRay';
+requires 'Devel::DebugHooks';
 requires 'Sub::Exporter::Progressive';
