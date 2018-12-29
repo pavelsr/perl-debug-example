@@ -7,7 +7,13 @@ sub new {
 
 sub method1 {
     my $self = shift;
-    print "Hello world from module Quux\n";
+    $self->method2();
+    print "Hello world from ".(caller(0))[3]."\n";
+}
+
+sub method2 {
+    my $self = shift;
+    print "Hello world from ".(caller(0))[3]."\n";
 }
 
 1;

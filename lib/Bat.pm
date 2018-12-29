@@ -1,16 +1,18 @@
 package Bat;
 
+# demo module that use  Sub::Exporter::Progressive as 
+
 use Sub::Exporter::Progressive -setup => {
-    exports => [ qw(sub1 sub2) ],
+    exports => [ qw(abc) ],
 };
 
-sub sub1 {
-    sub2();
+sub abc {
+    _xyz();
     return 1;
 }
 
-sub sub2 {
-    print "Hello world from package Bat\n";
+sub _xyz {
+    print "Hello world from package ".__PACKAGE__."\n";
     return 2;
 }
 

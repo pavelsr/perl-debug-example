@@ -22,20 +22,26 @@ nytprof:
 	eog nytprof/subs-callgraph.png
 	
 ltrace:	
-	perl -MDebug::LTrace='*' start.pl
+	perl -MDebug::LTrace='*' start.pl > /dev/null
 	
 tracecalls:
-	perl -d:TraceCalls=sub1 start.pl
+	perl -d:TraceCalls=sub1 start.pl > /dev/null
 
 calltrace:
 	# most ok debugger
-	perl -d:CallTrace start.pl
+	perl -d:CallTrace=kiss start.pl > /dev/null
 	
 dumptrace:
-	perl -d:DumpTrace start.pl
+	perl -d:DumpTrace start.pl > /dev/null
 	
 xray:
-	perl -MDevel::XRay start.pl
+	perl -MDevel::XRay start.pl > /dev/null
+
+tray:
+	perl -d:TRay start.pl > /dev/null
 	
 debughooks:
 	perl -d:DebugHooks::Terminal start.pl
+
+allsubs:
+	perl -I/data/projects/devel-allsubs/lib -d:AllSubs start.pl > /dev/null
